@@ -2066,7 +2066,7 @@ a.video-play-btn {
 }
 
 .abt-bg {
-  background-image: url(../img/pitch-econect.svg);
+  background-image: url(../img/pitch-econect.png);
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -2158,7 +2158,7 @@ a.video-play-btn {
 }
 
 .feature-bg:after {
-  background-image: url(../img/pitch-econect.svg);
+  background-image: url(../img/pitch-econect.png);
   position: absolute;
   right: 0;
   top: 0;
