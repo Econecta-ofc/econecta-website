@@ -2755,3 +2755,39 @@ table.order-details tbody td {
   vertical-align: middle;
   width: 100%;
 }
+
+
+
+
+/* -----------------------------------------------------------------------------
+
+# login Page Styles
+
+----------------------------------------------------------------------------- */
+.login-text i {
+  font-size: 90px;
+  margin-bottom: 30px;
+}
+
+.login-text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.login-text p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.full-height-section {
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+
+.full-height-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
