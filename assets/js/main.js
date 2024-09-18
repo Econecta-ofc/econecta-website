@@ -157,6 +157,20 @@
             $(".search-area").removeClass("search-active");
         });
     
+
+        // login form
+        $(".login-bar-icon").on("click", function(){
+            $(".login-area").addClass("login-active");
+        });
+
+        $(".close-btn").on("click", function() {
+            $(".login-area").removeClass("login-active");
+        });
+
+        $('.message a').click(function(){
+            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+         });
+
     });
 
 
