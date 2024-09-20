@@ -583,7 +583,7 @@
 	}
 }
 /* Wide Mobile Layout: 480px. */
-@media only screen and (min-width: 400px) and (max-width: 767px) { 
+@media only screen and (min-width: 100px) and (max-width: 1000px) { 
 	.hero-area div.hero-form {
 	    margin: 0 auto;
 	    right: auto;
@@ -603,7 +603,13 @@
 	}
 	
 	.form{
-		position: absolute;
-		margin:0 auto;
+		position: relative;
+		z-index: 1;
+		background: #ffffff;
+		max-width: 360px;
+		margin-left: auto;  
+		padding: 0 auto;
+		text-align: center;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	}
 }
