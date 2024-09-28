@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Contato</title>
+	<title>Comprar</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon_econecta.svg">
@@ -59,36 +59,13 @@
 						<nav class="main-menu">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">Sobre nós</a></li>
-								<li><a href="#">Páginas</a>
-									<ul class="sub-menu">
-										<li><a href="404.html">Página 404</a></li>
-										<li><a href="about.html">Sobre nós</a></li>
-										<li><a href="cart.html">Carrinho</a></li>
-										<li><a href="checkout.html">Finalizar compra</a></li>
-										<li><a href="contact.html">Contato</a></li>
-										<li><a href="news.html">Notícias</a></li>
-										<li><a href="shop.html">Comprar</a></li>
-									</ul>
-								</li>
-								<li><a href="news.html">Blog</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">Blog</a></li>
-										<li><a href="single-news.html">Artigo único</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contato</a></li>
-								<li><a href="shop.html">Comprar</a>
-									<ul class="sub-menu">
-										<li><a href="shop.html">Comprar</a></li>
-										<li><a href="checkout.html">Finalizar compra</a></li>
-										<li><a href="single-product.html">Produto único</a></li>
-										<li><a href="cart.html">Carrinho</a></li>
-									</ul>
-								</li>
+								<li><a href="sobre-nos.html">Sobre Nós</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contato.html">Contato</a></li>
+								<li><a href="comprar.html">Comprar</a></li>
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="shopping-cart" href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 										<a class="mobile-hide login-bar-icon" href="#"><i class="fas fa-user"></i></a>								
 									</div>
@@ -158,15 +135,14 @@
 			</div>
 		  </div>    
 		  <!-- end login area -->
-	  	
-	<!-- breadcrumb-section -->
+	  
+<!-- breadcrumb-section -->
 	<div class="breadcrumb-section breadcrumb-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Obtenha suporte</p>
-						<h1>Fale conosco</h1>
+						<h1>Comprar</h1>
 					</div>
 				</div>
 			</div>
@@ -174,71 +150,101 @@
 	</div>
 	<!-- end breadcrumb section -->
 
-	<!-- contact form -->
-	<div class="contact-from-section mt-150 mb-150">
+	<!-- products -->
+	<div class="product-section mt-150 mb-150">
 		<div class="container">
+
 			<div class="row">
-				<div class="col-lg-8 mb-5 mb-lg-0">
-					<div class="form-title">
-						<h2>Alguma dúvida?</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione! Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum minus voluptate? Dolore, esse natus!</p>
-					</div>
-				 	<div id="form_status"></div>
-					<div class="contact-form">
-						<form type="POST" id="fruitkha-contact" onSubmit="return valid_datas( this );">
-							<p>
-								<input type="text" placeholder="Nome" name="name" id="name">
-								<input type="email" placeholder="Email" name="email" id="email">
-							</p>
-							<p>
-								<input type="tel" placeholder="Telefone" name="phone" id="phone">
-								<input type="text" placeholder="Assunto" name="subject" id="subject">
-							</p>
-							<p><textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea></p>
-							<input type="hidden" name="token" value="FsWga4&@f6aw" />
-							<p><input type="submit" value="Enviar"></p>
-						</form>
+                <div class="col-md-12">
+                    <div class="product-filters">
+                        <ul>
+                            <li class="active" data-filter="*">Todos</li>
+                            <li data-filter=".seed">Sementes</li>
+                            <li data-filter=".kit">Kits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+			<div class="row product-lists">
+				<div class="col-lg-4 col-md-6 text-center seed">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="kit-cultivo-base.html"><img src="assets/img/products/produto-econect-1.svg" alt=""></a>
+						</div>
+						<h3>Sementes de Cenoura Nantes</h3>
+						<p class="product-price"><span>Por unidade</span> R$10,00 </p>
+						<a href="carrinho.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Adicione ao Carrinho</a>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="contact-form-wrap">
-						<div class="contact-form-box">
-							<h4><i class="fas fa-map"></i> Endereço</h4>
-							<p>Av. da Saudade, 125 - Ponte Preta <br> Campinas - SP, 13041-670 <br> Brasil</p>
+				<div class="col-lg-4 col-md-6 text-center seed">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="kit-cultivo-base.html"><img src="assets/img/products/produto-econect-2.svg" alt=""></a>
 						</div>
-						<div class="contact-form-box">
-							<h4><i class="far fa-clock"></i> Horário de Funcionamento</h4>
-							<p>SEG - SEX: 8h às 21h <br> SAB - DOM: 10h às 20h </p>
+						<h3>Sementes de Rúcula Cultívada</h3>
+						<p class="product-price"><span>Por unidade</span> R$10,00 </p>
+						<a href="carrinho.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Adicione ao Carrinho</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center kit">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="kit-cultivo-base.html"><img src="assets/img/products/produto-econect-3.svg" alt=""></a>
 						</div>
-						<div class="contact-form-box">
-							<h4><i class="fas fa-address-book"></i> Contato</h4>
-							<p>Telefone: +55 (19) 3731-2840 <br> Email: somoseconecta@gmail.com</p>
-						</div>
+						<h3>Kit Cultivo Base</h3>
+						<p class="product-price"><span>Por unidade</span> R$289,90 </p>
+						<a href="carrinho.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Adicione ao Carrinho</a>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- end contact form -->
 
-	<!-- find our location -->
-	<div class="find-location blue-bg">
-		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<p> <i class="fas fa-map-marker-alt"></i> Encontre nossa Localização</p>
+					<div class="pagination-wrap">
+						<ul>
+							<li><a href="#">Prev</a></li>
+							<li><a class="active" href="#">1</a></li>
+							<!-- <li><a href="#">2</a></li> -->
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end find our location -->
+	<!-- end products -->
 
-	<!-- google map section -->
-	<div class="embed-responsive embed-responsive-21by9">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.123456789!2d-47.05613!3d-22.915154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf4f4f4f4f4f%3A0x1234567890abcdef!2sEscola%20SENAI%20%22Prof.%20Dr.%20Euryclides%20de%20Jesus%20Zerbini%22!5e0!3m2!1spt-BR!2sbr&output=embed" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="embed-responsive-item"></iframe>
+	<!-- logo carousel -->
+	<div class="logo-carousel-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="logo-carousel-inner">
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/senai-logo.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/green-gear-logo.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/logo2.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/logo3.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/logo4.svg" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/logo5.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- end google map section -->
-
+	<!-- end logo carousel -->
 
 	<!-- footer -->
 	<div class="footer-area">
@@ -264,10 +270,10 @@
 						<h2 class="widget-title">Páginas</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">Sobre nós</a></li>
+							<li><a href="sobre-nos.html">Sobre nós</a></li>
 							<li><a href="services.html">Comprar</a></li>
-							<li><a href="news.html">Blog</a></li>
-							<li><a href="contact.html">Contato</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contato.html">Contato</a></li>
 						</ul>
 					</div>
 				</div>
@@ -327,10 +333,8 @@
 	<script src="assets/js/jquery.meanmenu.min.js"></script>
 	<!-- sticker js -->
 	<script src="assets/js/sticker.js"></script>
-	<!-- form validation js -->
-	<script src="assets/js/form-validate.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
-	
+
 </body>
 </html>

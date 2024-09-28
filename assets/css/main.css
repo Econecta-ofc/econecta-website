@@ -855,22 +855,17 @@ a.mobile-show {
 
 ----------------------------------------------------------------------------- */
 .login-area {
+  vertical-align: middle;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 5555;
-  background: linear-gradient(
-    #364b56,
-    #202f36,
-  );
+  background:#051922;
   width: 100%;
   height: 100%;
   text-align: center;
   background: #364b56; /* fallback for old browsers */
-  background: linear-gradient(
-    #364b56,
-    #202f36,
-  );
+  background: #051922;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -888,7 +883,7 @@ a.mobile-show {
   width: 500px;
   max-width: 360px;
   margin-left: 366px;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 #00000033, 0 5px 5px 0 #0000003d;
@@ -970,11 +965,16 @@ a.mobile-show {
   color: #ef3b3a;
 }
 
+.login-bar {
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+
 .login-area .login-bar div.login-bar-tablecell {
   display: table-cell;
   vertical-align: middle;
   height: auto;
-  width: 0 auto;
 }
 
 .login-bar-tablecell input {
@@ -990,6 +990,16 @@ a.mobile-show {
   font-weight: 700;
   margin-bottom: 40px;
   color: #000000;
+}
+
+.login-bar-tablecell h3 {
+  vertical-align: middle;
+  height: auto;
+  color: #fff;
+  margin-top: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 7px;
 }
 
 .login-bar-tablecell input::-webkit-input-placeholder {
@@ -1544,7 +1554,7 @@ a.mobile-show.login-bar-icon:hover {
 
 ----------------------------------------------------------------------------- */
 .hero-bg {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/hero_econect-bg1.svg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2784,6 +2794,7 @@ tr.total-data td strong {
 
 .cart-buttons a:first-child {
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .coupon-section {

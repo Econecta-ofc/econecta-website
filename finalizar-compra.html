@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Comprar</title>
+	<title>Finalizar compra</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon_econecta.svg">
@@ -59,36 +59,13 @@
 						<nav class="main-menu">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">Sobre nós</a></li>
-								<li><a href="#">Páginas</a>
-									<ul class="sub-menu">
-										<li><a href="404.html">Página 404</a></li>
-										<li><a href="about.html">Sobre nós</a></li>
-										<li><a href="cart.html">Carrinho</a></li>
-										<li><a href="checkout.html">Finalizar compra</a></li>
-										<li><a href="contact.html">Contato</a></li>
-										<li><a href="news.html">Notícias</a></li>
-										<li><a href="shop.html">Comprar</a></li>
-									</ul>
-								</li>
-								<li><a href="news.html">Blog</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">Blog</a></li>
-										<li><a href="single-news.html">Artigo único</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contato</a></li>
-								<li><a href="shop.html">Comprar</a>
-									<ul class="sub-menu">
-										<li><a href="shop.html">Comprar</a></li>
-										<li><a href="checkout.html">Finalizar compra</a></li>
-										<li><a href="single-product.html">Produto único</a></li>
-										<li><a href="cart.html">Carrinho</a></li>
-									</ul>
-								</li>
+								<li><a href="sobre-nos.html">Sobre Nós</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contato.html">Contato</a></li>
+								<li><a href="comprar.html">Comprar</a></li>
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="shopping-cart" href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 										<a class="mobile-hide login-bar-icon" href="#"><i class="fas fa-user"></i></a>								
 									</div>
@@ -165,8 +142,7 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Kits para automação de hortas</p>
-						<h1>Comprar</h1>
+						<h1>Finalizar Compra</h1>
 					</div>
 				</div>
 			</div>
@@ -174,70 +150,122 @@
 	</div>
 	<!-- end breadcrumb section -->
 
-	<!-- products -->
-	<div class="product-section mt-150 mb-150">
+	<!-- check out section -->
+	<div class="checkout-section mt-150 mb-150">
 		<div class="container">
-
 			<div class="row">
-                <div class="col-md-12">
-                    <div class="product-filters">
-                        <ul>
-                            <li class="active" data-filter="*">Todos</li>
-                            <li data-filter=".seed">Sementes</li>
-                            <li data-filter=".kit">Kits</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+				<div class="col-lg-8">
+					<div class="checkout-accordion-wrap">
+						<div class="accordion" id="accordionExample">
+						  <div class="card single-accordion">
+						    <div class="card-header" id="headingOne">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          Endereço de Faturamento
+						        </button>
+						      </h5>
+						    </div>
 
-			<div class="row product-lists">
-				<div class="col-lg-4 col-md-6 text-center seed">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/produto-econect-1.svg" alt=""></a>
+						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						      <div class="card-body">
+						        <div class="billing-address-form">
+						        	<form action="index.html">
+						        		<p><input type="text" placeholder="Nome"></p>
+						        		<p><input type="email" placeholder="Email"></p>
+						        		<p><input type="text" placeholder="Endereço"></p>
+						        		<p><input type="tel" placeholder="Telefone"></p>
+						        		<p><textarea name="bill" id="bill" cols="30" rows="10" placeholder="Comentário"></textarea></p>
+						        	</form>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card single-accordion">
+						    <div class="card-header" id="headingTwo">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          Endereço de Entrega
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						      <div class="card-body">
+						        <div class="shipping-address-form">
+						        	<p>Your shipping address form is here.</p>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card single-accordion">
+						    <div class="card-header" id="headingThree">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          Forma de Pagamento
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						      <div class="card-body">
+						        <div class="card-details">
+						        	<p>Your card details goes here.</p>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
 						</div>
-						<h3>Sementes de Cenoura Nantes</h3>
-						<p class="product-price"><span>Por unidade</span> R$10 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Adicione ao Carrinho</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center seed">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/produto-econect-2.svg" alt=""></a>
-						</div>
-						<h3>Sementes de Rúcula Cultívada</h3>
-						<p class="product-price"><span>Por unidade</span> R$10 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Adicione ao Carrinho</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center kit">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/produto-econect-3.svg" alt=""></a>
-						</div>
-						<h3>Kit Cultivo Base</h3>
-						<p class="product-price"><span>Por unidade</span> R$289,90 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Adicione ao Carrinho</a>
-					</div>
-				</div>
-			</div>
 
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<div class="pagination-wrap">
-						<ul>
-							<li><a href="#">Prev</a></li>
-							<li><a class="active" href="#">1</a></li>
-							<!-- <li><a href="#">2</a></li> -->
-							<li><a href="#">Next</a></li>
-						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="order-details-wrap">
+						<table class="order-details">
+							<thead>
+								<tr>
+									<th>Detalhes do Pedido</th>
+									<th>Preço</th>
+								</tr>
+							</thead>
+							<tbody class="order-details-body">
+								<tr>
+									<td>Produto</td>
+									<td>Total</td>
+								</tr>
+								<tr>
+									<td>Strawberry</td>
+									<td>$85.00</td>
+								</tr>
+								<tr>
+									<td>Berry</td>
+									<td>$70.00</td>
+								</tr>
+								<tr>
+									<td>Lemon</td>
+									<td>$35.00</td>
+								</tr>
+							</tbody>
+							<tbody class="checkout-details">
+								<tr>
+									<td>Subtotal</td>
+									<td>$190</td>
+								</tr>
+								<tr>
+									<td>Shipping</td>
+									<td>$50</td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td>$240</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="#" class="boxed-btn">Confirmar Pedido</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end products -->
+	<!-- end check out section -->
 
 	<!-- logo carousel -->
 	<div class="logo-carousel-section">
@@ -294,10 +322,10 @@
 						<h2 class="widget-title">Páginas</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">Sobre nós</a></li>
+							<li><a href="sobre-nos.html">Sobre nós</a></li>
 							<li><a href="services.html">Comprar</a></li>
-							<li><a href="news.html">Blog</a></li>
-							<li><a href="contact.html">Contato</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contato.html">Contato</a></li>
 						</ul>
 					</div>
 				</div>
