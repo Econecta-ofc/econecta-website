@@ -171,6 +171,117 @@
             $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
          });
 
+
+        // adicionar produto ao carrinho
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartButtons = document.querySelectorAll('.cart-btn');
+        
+            cartButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const productID = button.getAttribute('data-id');
+                    const productName = button.getAttribute('data-name');
+                    const productPrice = parseFloat(button.getAttribute('data-price'));
+                    const productImage = button.getAttribute('data-image');
+                    addToCart(productID, productName, productPrice, productImage);
+                });
+            });
+        
+            function addToCart(id, name, price, image) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const existingProduct = cart.find(product => product.id === id);
+        
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    const product = { id, name, price, image, quantity: 1 };
+                    cart.push(product);
+                }
+        
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCartTable();
+                alert('Produto adicionado ao carrinho!');
+            }
+        
+            function updateCartTable() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartBody = document.getElementById('cart-body');
+                cartBody.innerHTML = '';
+        
+                cart.forEach(product => {
+                    const row = document.createElement('tr');
+                    row.classList.add('table-body-row');
+                    row.innerHTML = `
+                        <td class="product-remove"><a href="#" data-id="${product.id}"><i class="far fa-window-close"></i></a></td>
+                        <td class="product-image"><img src="${product.image}" alt=""></td>
+                        <td class="product-name">${product.name}</td>
+                        <td class="product-price">R$${product.price.toFixed(2)}</td>
+                        <td class="product-quantity"><input type="number" value="${product.quantity}" min="1" data-id="${product.id}"></td>
+                        <td class="product-total">R$${(product.price * product.quantity).toFixed(2)}</td>
+                    `;
+                    cartBody.appendChild(row);
+                });
+        
+                updateTotals();
+                addRemoveEventListeners();
+                addQuantityChangeListeners();
+            }
+        
+            function updateTotals() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                let subtotal = 0;
+        
+                cart.forEach(product => {
+                    subtotal += product.price * product.quantity;
+                });
+        
+                document.getElementById('subtotal').innerText = `R$${subtotal.toFixed(2)}`;
+                document.getElementById('frete').innerText = 'R$0.00'; // Atualize conforme necessário
+                document.getElementById('total').innerText = `R$${subtotal.toFixed(2)}`;
+            }
+        
+            function addRemoveEventListeners() {
+                const removeButtons = document.querySelectorAll('.product-remove a');
+                removeButtons.forEach(button => {
+                    button.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        const productID = button.getAttribute('data-id');
+                        removeFromCart(productID);
+                    });
+                });
+            }
+        
+            function removeFromCart(id) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart = cart.filter(product => product.id !== id);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCartTable();
+            }
+        
+            function addQuantityChangeListeners() {
+                const quantityInputs = document.querySelectorAll('.product-quantity input');
+                quantityInputs.forEach(input => {
+                    input.addEventListener('change', (event) => {
+                        const productID = input.getAttribute('data-id');
+                        const newQuantity = parseInt(event.target.value);
+                        updateProductQuantity(productID, newQuantity);
+                    });
+                });
+            }
+        
+            function updateProductQuantity(id, quantity) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const product = cart.find(product => product.id === id);
+                if (product) {
+                    product.quantity = quantity;
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCartTable();
+                }
+            }
+        
+            updateCartTable();
+        });
+
     });
 
 
