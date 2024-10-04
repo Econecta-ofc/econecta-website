@@ -168,22 +168,7 @@
 								</tr>
 							</thead>
 							<tbody id="cart-body">
-								<!-- <tr class="table-body-row">
-									<td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a></td>
-									<td class="product-image"><img src="assets/img/products/produto-econect-1.svg" alt=""></td>
-									<td class="product-name">Sementes de Cenoura Nantes</td>
-									<td class="product-price">R$10,00</td>
-									<td class="product-quantity"><input type="number" placeholder="0"></td>
-									<td class="product-total">1</td>
-								</tr>
-								<tr class="table-body-row">
-									<td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a></td>
-									<td class="product-image"><img src="assets/img/products/produto-econect-3.svg" alt=""></td>
-									<td class="product-name">Kit Cultivo Base</td>
-									<td class="product-price">R$289,90</td>
-									<td class="product-quantity"><input type="number" placeholder="0"></td>
-									<td class="product-total">1</td>
-								</tr> -->
+
 							</tbody>
 						</table>
 					</div>
@@ -354,6 +339,34 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+
+	<!-- Adicionando o código de manipulação do carrinho -->
+	<script>
+		const cartBody = document.getElementById("cart-body");
+
+		function updateCart() {
+			cartBody.innerHTML = ""; // Limpa o conteúdo anterior do tbody
+
+			cartItems.forEach(item => {
+				const row = document.createElement("tr");
+				row.classList.add("table-body-row");
+
+				row.innerHTML = `
+					<td class="product-remove"><a href="#"><i class="fas fa-times"></i></a></td>
+					<td class="product-image"><img src="${item.imgSrc}" alt="${item.name}"></td>
+					<td class="product-name">${item.name}</td>
+					<td class="product-price">R$${item.price.toFixed(2)}</td>
+					<td class="product-quantity"><input type="number" value="${item.quantity}" min="1"></td>
+					<td class="product-total">R$${(item.price * item.quantity).toFixed(2)}</td>
+				`;
+
+				cartBody.appendChild(row);
+			});
+		}
+
+		// Atualiza o conteúdo do carrinho quando a página carrega
+		window.onload = updateCart;
+	</script>
 
 </body>
 </html>
