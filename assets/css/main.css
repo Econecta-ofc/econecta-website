@@ -26,7 +26,7 @@ body {
   font-size: 1rem;
   letter-spacing: 0.1px;
   line-height: 1.8;
-  color: #051922;
+  color: #000;
   overflow-x: hidden;
 }
 
@@ -56,7 +56,7 @@ h6, .h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin: 0 0 1.25rem 0;
-  color: #051922;
+  color: #000;
 }
 
 h1:last-child, .h1:last-child,
@@ -152,7 +152,7 @@ p {
   font-size: 1rem;
   letter-spacing: 0.1px;
   line-height: 1.8;
-  color: #051922;
+  color: #000;
   margin: 0 0 1.25rem 0;
 }
 
@@ -430,7 +430,7 @@ a.bordered-btn {
 a.read-more-btn {
   display: inline-block;
   margin-top: 15px;
-  color: #051922;
+  color: #000;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -465,7 +465,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 
 .section-title p {
   font-size: 15px;
-  width: 530px;
+  width: 700px;
   margin: 0 auto;
   color: #555;
   margin-top: 10px;
@@ -523,7 +523,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 
 ----------------------------------------------------------------------------- */
 ul.navbar-nav li.nav-item a.nav-link, ul.navbar-nav li.nav-item.active a.nav-link {
-  color: #051922;
+  color: #000;
 }
 
 .top-header-area {
@@ -636,11 +636,11 @@ ul.sub-menu li:last-child {
 }
 
 .mean-container a.meanmenu-reveal {
-  color: #051922;
+  color: #000;
 }
 
 .mean-container a.meanmenu-reveal span {
-  background-color: #051922;
+  background-color: #000;
 }
 
 .mean-container .mean-nav ul li a {
@@ -677,7 +677,7 @@ nav.mean-nav > ul > li:first-child > a {
 }
 
 .top-header-area.sepherate-header ul li > a, .top-header-area.sepherate-header .header-icons a {
-  color: #051922;
+  color: #000;
 }
 
 nav.main-menu ul ul.sub-menu li {
@@ -724,7 +724,7 @@ nav.main-menu li a {
 }
 
 .sticky-wrapper.is-sticky .top-header-area {
-  background-color: #051922;
+  background-color: #000;
   padding: 15px 0;
 }
 
@@ -743,7 +743,7 @@ ul.navbar-nav {
   left: 0;
   top: 0;
   z-index: 5555;
-  background-color: #051922;
+  background-color: #000;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -864,7 +864,7 @@ a.mobile-show {
 }
 
 .footer-area {
-  background-color: #051922;
+  background-color: #000;
   color: #fff;
   padding: 150px 0;
 }
@@ -935,7 +935,7 @@ h2.widget-title:after {
 }
 
 .copyright {
-  background-color: #051922;
+  background-color: #000;
   border-top: 1px solid #232a35;
 }
 
@@ -1015,7 +1015,7 @@ a.boxed-btn {
 }
 
 a.boxed-btn:hover {
-  background-color: #051922;
+  background-color: #000;
   color: #F28123;
 }
 
@@ -1135,7 +1135,7 @@ a.tof-btn:hover i {
 
 .footer-box.subscribe form button:hover {
   background-color: #F28123;
-  color: #051922;
+  color: #000;
 }
 
 .social-icons ul li:hover a {
@@ -1155,7 +1155,7 @@ ul.social-link-team li a {
 }
 
 ul.social-link-team li a:hover {
-  background-color: #051922;
+  background-color: #000;
   color: #F28123;
 }
 
@@ -1178,7 +1178,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #051922;
+  background-color: #000;
   color: #F28123;
 }
 
@@ -1246,7 +1246,7 @@ a.cart-btn {
 }
 
 a.cart-btn:hover {
-  background-color: #051922;
+  background-color: #000;
   color: #F28123;
 }
 
@@ -1357,23 +1357,13 @@ a.mobile-show.search-bar-icon:hover {
   color: #F28123;
 }
 
-a.mobile-show.login-bar-icon {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-a.mobile-show.login-bar-icon:hover {
-  color: #F28123;
-}
-
 /* -----------------------------------------------------------------------------
 
 # Hero Styles
 
 ----------------------------------------------------------------------------- */
 .hero-bg {
-  background-image: url(../img/hero_econect-bg1.svg);
+  background-image: url(../img/hero_econecta-bg1.svg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1388,6 +1378,10 @@ a.mobile-show.login-bar-icon:hover {
 .hero-text-tablecell {
   display: table-cell;
   font-family: 'Montserrat', sans-serif;
+}
+
+.title-carousel {
+  color: #fff
 }
 
 .hero-area {
@@ -1472,7 +1466,7 @@ html, body {
 
 input[type="submit"] {
   background-color: #F28123;
-  color: #051922;
+  color: #000;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 15px;
@@ -1483,15 +1477,15 @@ input[type="submit"] {
 }
 
 .homepage-bg-1 {
-  background-image: url(../img/hero_econect-bg1.svg);
+  background-image: url(../img/hero_econecta-bg1.svg);
 }
 
 .homepage-bg-2 {
-  background-image: url(../img/hero-econect-bg2.svg);
+  background-image: url(../img/hero_econecta-bg2.svg);
 }
 
 .homepage-bg-3 {
-  background-image: url(../img/hero-econect-bg3.svg);
+  background-image: url(../img/hero_econecta-bg3.svg);
 }
 
 .homepage-slider {
@@ -1531,7 +1525,7 @@ input[type="submit"] {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #051922;
+  background-color: #000;
   content: "";
   z-index: -1;
   opacity: 0.7;
@@ -1645,13 +1639,13 @@ div.owl-controls, .owl-controls div {
 }
 
 .single-latest-news h3 a {
-  color: #051922;
+  color: #000;
 }
 
 p.blog-meta span {
   margin-right: 15px;
   opacity: 0.6;
-  color: #051922;
+  color: #000;
   font-size: 0.85em;
 }
 
@@ -1735,7 +1729,7 @@ p.excerpt {
 .single-article-text p {
   font-size: 15px;
   line-height: 1.6;
-  color: #051922;
+  color: #000;
 }
 
 .comments-list-wrap {
@@ -1788,7 +1782,7 @@ span.comment-date {
 }
 
 .comment-text-body h4 a {
-  color: #051922;
+  color: #000;
   font-size: 80%;
   margin-left: 10px;
   border-bottom: 1px solid #aaa;
@@ -1819,7 +1813,7 @@ span.comment-date {
   padding: 15px;
   border-radius: 5px;
   font-size: 15px;
-  color: #051922;
+  color: #000;
 }
 
 .comment-template form p input[type=email] {
@@ -1828,7 +1822,7 @@ span.comment-date {
   padding: 15px;
   border-radius: 5px;
   font-size: 15px;
-  color: #051922;
+  color: #000;
   margin-left: 10px;
 }
 
@@ -1836,7 +1830,7 @@ span.comment-date {
   border: 1px solid #ddd;
   padding: 15px;
   font-size: 15px;
-  color: #051922;
+  color: #000;
   border-radius: 5px;
   height: 250px;
   resize: none;
@@ -1941,7 +1935,7 @@ span.comment-date {
 }
 
 .cart-banner .image-column .price-box .inner-price .price {
-  color: #051922;
+  color: #000;
   padding-top: 27px;
   position: relative;
   display: inline-block;
@@ -1950,7 +1944,7 @@ span.comment-date {
 }
 
 .cart-banner .image-column .price-box .inner-price .price strong {
-  color: #051922;
+  color: #000;
   font-size: 24px;
 }
 
@@ -2027,7 +2021,7 @@ span.comment-date {
   display: block;
   font-size: 70%;
   margin-top: 10px;
-  color: #051922;
+  color: #000;
   font-weight: 600;
   opacity: 0.5;
 }
@@ -2062,7 +2056,7 @@ p.testimonial-body {
 a.video-play-btn {
   position: absolute;
   background-color: #F28123;
-  color: #051922;
+  color: #000;
   width: 90px;
   height: 90px;
   text-align: center;
@@ -2100,7 +2094,7 @@ a.video-play-btn {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: #051922;
+  background-color: #000;
   opacity: 0.3;
 }
 
@@ -2155,7 +2149,7 @@ a.video-play-btn {
   position: relative;
   font-size: 24px;
   line-height: 1.1em;
-  color: #051922;
+  color: #000;
   font-weight: 400;
   text-align: center;
   margin-right: 10px;
@@ -2403,7 +2397,7 @@ ul.social-link-team li a {
   font-weight: 700;
   font-size: 18px;
   margin: 15px;
-  border: 2px solid #051922;
+  border: 2px solid #000;
   color: #323232;
   cursor: pointer;
   padding: 8px 20px;
@@ -2492,7 +2486,7 @@ p.single-product-pricing span {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #051922;
+  color: #000;
   line-height: inherit;
 }
 
@@ -2526,7 +2520,7 @@ ul.product-share li {
 
 ul.product-share li a {
   display: block;
-  color: #051922;
+  color: #000;
   margin-right: 10px;
 }
 
@@ -2568,7 +2562,7 @@ td.product-image img {
 .cart-table-wrap tbody tr td {
   border: 1px solid #efefef;
   padding: 20px 0;
-  color: #051922;
+  color: #000;
 }
 
 thead.cart-table-head tr {
@@ -2580,7 +2574,7 @@ td.product-quantity input {
 }
 
 td.product-remove a {
-  color: #051922;
+  color: #000;
 }
 
 .total-section table.total-table {
@@ -2627,7 +2621,7 @@ tr.total-data td strong {
 
 .coupon-form-wrap form p input[type=text] {
   border: 1px solid #ddd;
-  color: #051922;
+  color: #000;
   padding: 15px;
   width: 100%;
   border-radius: 5px;
@@ -2650,7 +2644,7 @@ tr.total-data td strong {
 }
 
 .card.single-accordion .card-header h5 button {
-  color: #051922;
+  color: #000;
   font-size: 15px;
   display: block;
   width: 100%;
