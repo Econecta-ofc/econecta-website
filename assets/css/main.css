@@ -1873,20 +1873,8 @@ a.video-play-btn {
   margin: 150px 0;
 }
 
-.feature-bg:after {
-  background-image: url(../img/pitch-econect.png);
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 40%;
-  height: 100%;
-  content: "";
-  background-size: cover;
-  background-position: center;
-  border-top-left-radius: 5px;
-  -webkit-box-shadow: 0 0 20px #cacaca;
-  box-shadow: 0 0 20px #cacaca;
-  border-bottom-left-radius: 5px;
+.featured-text {
+  text-align: center;
 }
 
 .team-bg-1 {
@@ -2148,9 +2136,8 @@ ul.social-link-team li a {
   height: 300px; /* Altura do banner */
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   /*margin: 40px auto;*/
-  margin-bottom: 50px;
   width: 100%;
   /*border-radius: 10px;*/
 }
@@ -2221,6 +2208,10 @@ ul.social-link-team li a {
 .service-section {
   padding: 60px 20px;
   text-align: center;
+}
+
+.custom-icon {
+  color: #F28123
 }
 
 .alt-bg {
